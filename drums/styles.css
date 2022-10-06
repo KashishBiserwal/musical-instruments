@@ -1,0 +1,264 @@
+body {
+  background-color: #313444;
+  padding: 0px;
+  margin: 0px;
+}
+
+.pressed {
+  opacity: 0.8 !important;
+}
+
+#main {
+  position: fixed;
+  display: inline-block;
+  left: 25%;
+  top: 11rem;
+  width: 579px;
+  height: 404px;
+  z-index: 1;
+}
+
+#kit {
+  position: absolute;
+}
+
+#kit img {
+  height: 400px;
+  width: auto;
+}
+
+#w-button {
+  position: relative;
+  top: 152px;
+  left: 94px;
+}
+.w {
+  opacity: 0;
+  height: 110px;
+  transform: rotate(5deg);
+  width: 157px;
+}
+#a-button {
+  position: relative;
+  top: -103px;
+  left: 4px;
+}
+.a {
+  opacity: 0;
+  height: 57px;
+  transform: rotate(1deg);
+  width: 131px;
+}
+#l-button {
+  position: relative;
+  top: -60px;
+  left: 452px;
+}
+.l {
+  opacity: 0;
+  height: 90px;
+  transform: rotate(1deg);
+  width: 143px;
+}
+#s-button {
+  position: relative;
+  top: -216px;
+  left: 137px;
+}
+.s {
+  opacity: 0;
+  height: 78px;
+  transform: rotate(-1deg);
+  width: 99px;
+}
+#d-button {
+  position: relative;
+  top: -339px;
+  left: 283px;
+}
+.d {
+  opacity: 0;
+  height: 94px;
+  transform: rotate(12deg);
+  width: 117px;
+}
+#j-button {
+  position: relative;
+  top: -300px;
+  left: 236px;
+}
+.j {
+  opacity: 0;
+  height: 81px;
+  transform: rotate(-1deg);
+  width: 85px;
+}
+#k-button {
+  position: relative;
+  top: -312px;
+  left: 345px;
+}
+.k {
+  opacity: 0;
+  height: 105px;
+  transform: rotate(12deg);
+  width: 163px;
+}
+
+.stage {
+  height: 320px;
+  width: 100%;
+  z-index: -1;
+  background-image: -webkit-linear-gradient(rgb(19, 19, 19), rgb(1, 0, 26));
+  position: absolute;
+  bottom: 0%;
+}
+
+.audience {
+  position: absolute;
+  background-image: url(images/audience.png);
+  background-repeat: repeat-x;
+  bottom: 367px;
+  width: 100%;
+}
+.below-aud {
+  position: absolute;
+  background: black;
+  height: 56px;
+  width: 100%;
+  bottom: 315px;
+  z-index: -1;
+}
+
+.spotlight-m {
+  position: absolute;
+  z-index: 10;
+  opacity: 0.3;
+  left: 32%;
+  width: 388px;
+  height: 100vh;
+  background: linear-gradient(
+    #6646ff,
+    rgba(43, 56, 228, 0.5),
+    rgba(0, 12, 184, 0)
+  );
+  clip-path: polygon(0% 100%, 50% -50%, 100% 100%);
+}
+
+.spotlight-l {
+  position: absolute;
+  z-index: 10;
+  opacity: 0.2;
+  left: 13%;
+  width: 546px;
+  height: 100vh;
+  background: linear-gradient(
+    rgb(138, 42, 255),
+    rgba(197, 36, 255, 0.5),
+    rgba(197, 36, 255, 0)
+  );
+  clip-path: polygon(21% 100%, -7% -48%, 100% 100%);
+}
+.spotlight-r {
+  position: absolute;
+  z-index: 10;
+  opacity: 0.2;
+  left: 41%;
+  width: 605px;
+  height: 100vh;
+  background: linear-gradient(
+    rgb(138, 42, 255),
+    rgba(197, 36, 255, 0.5),
+    rgba(197, 36, 255, 0)
+  );
+  clip-path: polygon(0% 100%, 104% -77%, 63% 100%);
+}
+
+#screen-light {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 11;
+  opacity: 0.3;
+  background-image: -webkit-linear-gradient(
+    rgb(107, 27, 255),
+    rgb(185, 62, 233),
+    rgb(248, 142, 248, 25%),
+    rgba(217, 188, 255, 0.5)
+  );
+}
+.key {
+  font-size: 2rem;
+  position: absolute;
+  color: #fff;
+  font-family: "Covered By Your Grace", cursive;
+  text-shadow: 2px 0 #8d04da;
+}
+
+.hide-btn {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 90;
+  right: 0;
+}
+.hide-btn img {
+  height: 99px;
+  width: 82px;
+}
+.hide-key {
+  display: none;
+}
+.btn {
+  height: 27px;
+  width: 44px;
+  border-radius: 50%;
+  background: #8d04da;
+  border: 0;
+  position: absolute;
+  right: 42px;
+  top: 54px;
+  transform: rotate(31deg);
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn i {
+  color: #e1e1e1;
+  font-size: 21px;
+}
+.w-key {
+  top: 107px;
+  left: 73px;
+  transform: rotate(-7deg);
+}
+.a-key {
+  top: 26px;
+  left: 56px;
+  transform: rotate(5deg);
+}
+.s-key {
+  top: 64px;
+  left: 61px;
+  transform: rotate(-11deg);
+}
+.d-key {
+  top: 95px;
+  left: 48px;
+  transform: rotate(-5deg);
+}
+.j-key {
+  top: 58px;
+  left: 77px;
+  transform: rotate(5deg);
+}
+.k-key {
+  top: 119px;
+  left: 63px;
+  transform: rotate(10deg);
+}
+.l-key {
+  top: 55px;
+  left: 69px;
+  transform: rotate(-4deg);
+}

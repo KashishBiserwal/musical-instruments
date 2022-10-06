@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;      
+}
+body{
+    background: linear-gradient(120deg, #9795EF, #F9C5D1);
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    font-family: 'Alex Brush', cursive;
+    font-size: 3rem;
+    padding-top: 45px;
+    background: -webkit-linear-gradient(30deg,rgb(18, 58, 234), rgb(223, 29, 29));
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+}
+p{
+    text-align: center;
+    font-family: 'Alex Brush', cursive;
+    color: rgb(36, 30, 163);
+    padding-top: 5px;
+    font-size: 25px;
+}
+.png{
+    height: 20rem;
+}
+#instruments{
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+}
+.in1, .in2{
+    display: grid;
+    text-align: center;
+}
+.in1 a, .in2 a{
+    color: rgb(36, 30, 163);
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: fantasy;
+}
+.in2{
+    margin-left: 100px;
+}
